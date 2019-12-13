@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/googlefonts/typography#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "browsersync": "0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
@@ -31,6 +29,8 @@
     "@material/density": "^4.0.0",
     "@material/drawer": "^4.0.0",
     "@material/icon-button": "^4.0.0",
+    "@material/menu": "^4.0.0",
+    "@material/tab-bar": "^4.0.0",
     "@material/top-app-bar": "^4.0.0"
   }
 }
