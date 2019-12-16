@@ -1,15 +1,22 @@
 .content-section {
   &--grid {
     display: grid;
-    grid-template-columns: max-content 1fr;
+    @media (min-width: $bp--medium) {
+      grid-template-columns: minmax(22rem, 45rem) minmax(22rem, 1fr);
+    }
   }
-  &--main {
-    padding-right: 2rem;
-  }
-  &--aside {
-    padding-left: 2rem;
+  @media (min-width: $bp--medium) {
+    &--main {
+      padding-right: 2rem;
+      .content-section--aside + & {
+        padding-top: calc( var(--body-text-spacer) * 2 );
+      }
+    }
+    &--aside {
+      padding-left: 2rem;
+    }
   }
   + .content-section {
-    margin-top: calc( var(--body-text-spacer) * 2 );
+    margin-top: calc( var(--body-text-spacer) * 3 );
   }
 }
