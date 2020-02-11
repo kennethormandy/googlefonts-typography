@@ -31,14 +31,16 @@
       }
     }
   }
-  + .content-section, 
+  + .content-section {
+    margin-top: calc( var(--body-text-spacer) * 2 );
+  }
   .color + & {
     margin-top: calc( var(--body-text-spacer) * 3 );
   }
 }
 
 .axis {
-  padding-top: 3rem;
+  padding-top: calc( var(--body-text-spacer) * 2 );
   > h2 {
     
     margin-top: 0;
